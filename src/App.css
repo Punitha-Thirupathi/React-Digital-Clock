@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #15f5ba;
+}
+.digital-clock {
+  background-color: #eef5ff;
+  text-align: center;
+  width: 500px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1px);
+}
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #211951;
+}
+.time {
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.date {
+  color: #888;
+  font-size: 20px;
+}
+@media only screen and (max-width: 425px) {
+  .digital-clock {
+    margin: auto 2rem;
+    width: auto;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .time {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 25px;
+  }
+  .time {
+    font-size: 25px;
+  }
+  .date {
+    font-size: 15px;
+  }
+}
